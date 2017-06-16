@@ -5,9 +5,11 @@ author: Yihui Xie
 
 **XMin** is the first Hugo theme I have designed. The original reason that I wrote it was I needed a minimal example of Hugo themes when I was writing the  [**blogdown**](https://github.com/rstudio/blogdown) book. Basically I wanted a simple theme that supports a navigation menu, a home page, other single pages, lists of pages, blog posts, categories, tags, and RSS. That is all. Nothing fancy. In terms of CSS and JavaScript, I really want to keep them minimal. In fact, this theme does not contain any JavaScript code at all, although on this example website I did introduce some JavaScript code (still relatively simple anyway). The theme does not contain any images, either, and is pretty much a plain-text theme.
 
+The theme name "XMin" can be interpreted as "**X**ie's **Min**imal theme" (Xie is my last name) or "e**X**tremely **Min**imal theme".
+
 # config.toml
 
-For this example site, I defined permalinks for two sections, `post` and `note`, so that the links to pages under these directories will contain the date info. This is optional, and it is up to your personal taste of URLs.
+For this example site, I defined permalinks for two sections, `post` and `note`, so that the links to pages under these directories will contain the date info, e.g., `https://xmin.yihui.name/post/2016/02/14/a-plain-markdown-post/`. This is optional, and it is up to your personal taste of URLs.
 
 ```
 [permalinks]
@@ -81,7 +83,7 @@ After I finished this theme, I started to wonder why I'd need `normalize.css` at
 Compared to inconsistencies across browsers, I care much more about these properties of HTML elements:
 
 - Tables should always be centered, and striped tables are easier to read especially when they are wide. Tables should not have vertical borders.
-- An image should ben centered if it is the only child element of a paragraph.
+- An image should be centered if it is the only child element of a paragraph.
 - The `max-width` of images, videos, and iframes should be `100%`.
 
 I hope you can enjoy this theme. The source code is [on Github](https://github.com/yihui/hugo-mini). Happy hacking!
