@@ -41,6 +41,8 @@ You can define the menu through `menu.main`, e.g.,
     url = "/index.xml"
 ```
 
+Alternatively, you can add `menu: main` to the YAML metadata of any of your pages, so that these pages will appear in the menu.
+
 The page footer can be defined in `.Params.copyright`, and the text is treated as Markdown, e.g.,
 
 ```
@@ -53,7 +55,7 @@ The page footer can be defined in `.Params.copyright`, and the text is treated a
 There are two layout files under `layouts/partials/` that you may want to override: `head_custom.html` and `foot_custom.html`. This is how you inject arbitrary HTML code to the head and foot areas. For example, this site has a file `layouts/partials/foot_custom.html` to support LaTeX math via MathJax and center images automatically:
 
 ```html
-<script src="https://yihui.name/js/math-code.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
   tex2jax: {
@@ -65,7 +67,7 @@ MathJax.Hub.Config({
 <script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
-<script async src="https://yihui.name/js/center-img.js"></script>
+<script async src="//yihui.name/js/center-img.js"></script>
 ```
 
 You can certainly enable highlight.js for syntax highlighting by yourself through `head_custom.html` and `foot_custom.html` if you want.
