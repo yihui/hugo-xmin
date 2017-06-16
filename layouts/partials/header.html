@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" />
+    <link rel="stylesheet" href="{{ "/css/fonts.css" | relURL }}" />
+    {{ partial "head_custom.html" . }}
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      {{ range .Site.Menus.main }}
+      <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+      {{ end }}
+    </ul>
+    <hr/>
+    </nav>
