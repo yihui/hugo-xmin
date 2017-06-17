@@ -43,11 +43,11 @@ You can define the menu through `menu.main`, e.g.,
 
 Alternatively, you can add `menu: main` to the YAML metadata of any of your pages, so that these pages will appear in the menu.
 
-The page footer can be defined in `.Params.copyright`, and the text is treated as Markdown, e.g.,
+The page footer can be defined in `.Params.footer`, and the text is treated as Markdown, e.g.,
 
 ```
 [params]
-    copyright = "&copy; [Yihui Xie](https://yihui.name) 2017"
+    footer = "&copy; [Yihui Xie](https://yihui.name) 2017"
 ```
 
 # Custom layouts

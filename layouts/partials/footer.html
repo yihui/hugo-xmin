@@ -1,6 +1,6 @@
   <footer>
   {{ partial "foot_custom.html" . }}
-  {{ with .Site.Params.copyright }}
+  {{ with .Site.Params.footer }}
   <hr/>
   {{ . | markdownify }}
   {{ end }}
