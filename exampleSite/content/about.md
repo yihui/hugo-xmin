@@ -74,6 +74,22 @@ You can certainly enable highlight.js for syntax highlighting by yourself throug
 
 If you do not like the default fonts (e.g., `Palatino`), you may provide your own `static/css/fonts.css` under the root directory of your website to override the `fonts.css` in the theme.
 
+# Other features
+
+I could have added more features to this theme, but I decided not to, since I have no intention to make this theme feature-rich. However, I will teach you how. I have prepared several examples via pull requests at https://github.com/yihui/hugo-xmin/pulls, so that you can see the implementations of these features when you check out the diffs in the pull requests. For example, you can:
+
+- [Enable Google Analytics](https://github.com/yihui/hugo-xmin/pull/3)
+
+- [Enable Disqus comments](https://github.com/yihui/hugo-xmin/pull/4)
+
+- [Enable highlight.js for syntax highlighting of code blocks](https://github.com/yihui/hugo-xmin/pull/5)
+
+- [Display categories and tags on a page](https://github.com/yihui/hugo-xmin/pull/2)
+
+- [Add a link in the footer of each page to "Edit this page" on Github](https://github.com/yihui/hugo-xmin/pull/6)
+
+To fully understand these examples, you have to read [the section on Hugo templates](https://bookdown.org/yihui/blogdown/templates.html) in the **blogdown** book.
+
 # Design philosophy
 
 Lastly, a few words about my design philosophy for this theme: I have been relying on existing frameworks like Bootstrap for years since I'm not really a designer, and I was always scared by the complexity of CSS.
