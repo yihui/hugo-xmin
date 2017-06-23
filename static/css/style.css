@@ -21,6 +21,10 @@ hr {
   border-style: dashed;
   color: #ddd;
 }
+#TableOfContents, #TOC {
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
 
 /* code */
 pre {
