@@ -1,0 +1,26 @@
+---
+title: Show Table of Contents for R Markdown Posts
+date: '2017-06-22'
+slug: rmd-toc
+output:
+  blogdown::html_page:
+    toc: true
+---
+
+# One Section
+
+A quick fox jumped over the lazy dog.
+
+![quick fox](https://slides.yihui.name/gif/quick-fox.gif)
+
+# Another Section
+
+A quick fox jumped over the lazy dog.
+
+## A subsection
+
+A quick fox jumped over the lazy dog.
+
+## Another subsection
+
+A quick fox jumped over the lazy dog.
