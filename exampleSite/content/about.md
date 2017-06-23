@@ -86,6 +86,8 @@ I could have added more features to this theme, but I decided not to, since I ha
 
 - [Display categories and tags on a page](https://github.com/yihui/hugo-xmin/pull/2)
 
+- [Add a table of contents](https://github.com/yihui/hugo-xmin/pull/7)
+
 - [Add a link in the footer of each page to "Edit this page" on Github](https://github.com/yihui/hugo-xmin/pull/6)
 
 To fully understand these examples, you have to read [the section on Hugo templates](https://bookdown.org/yihui/blogdown/templates.html) in the **blogdown** book.
