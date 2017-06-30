@@ -106,4 +106,4 @@ Compared to inconsistencies across browsers, I care much more about these proper
 - An image should be centered if it is the only child element of a paragraph.
 - The `max-width` of images, videos, and iframes should be `100%`.
 
-I hope you can enjoy this theme. The source code is [on Github](https://github.com/yihui/hugo-mini). Happy hacking!
+I hope you can enjoy this theme. The source code is [on Github](https://github.com/yihui/hugo-xmin). Happy hacking!
