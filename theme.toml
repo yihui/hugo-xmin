@@ -1,7 +1,7 @@
 name = "XMin"
 license = "MIT"
 licenselink = "https://github.com/yihui/hugo-xmin/blob/master/LICENSE.md"
-description = "Xie's Minimal Hugo theme: about 150 lines of code in total, including HTML and CSS"
+description = "eXtremely Minimal Hugo theme: about 150 lines of code in total, including HTML and CSS"
 homepage = "https://xmin.yihui.name"
 tags = ["minimal", "blog", "personal", "clean", "simple", "starter", "minimalist"]
 features = ["blog"]
