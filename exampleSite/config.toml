@@ -5,6 +5,7 @@ theme = "hugo-xmin"
 googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
+preserveTaxonomyNames = true
 footnotereturnlinkcontents = "↩"
 
 [permalinks]
