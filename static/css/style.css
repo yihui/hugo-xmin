@@ -13,7 +13,11 @@ body {
   padding: 5px;
   border-radius: 5px;
 }
-.menu, .article-meta, footer { text-align: center; }
+.article-meta, footer { text-align: center; }
+.menu { 
+  text-align: center;
+  padding:0px;
+}
 .title { font-size: 1.1em; }
 footer a { text-decoration: none; }
 hr {
