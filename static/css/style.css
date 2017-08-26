@@ -6,6 +6,7 @@ body {
 }
 
 /* header and footer areas */
+.menu { padding: 0; }
 .menu li { display: inline-block; }
 .article-meta, .menu a {
   text-decoration: none;
@@ -13,11 +14,7 @@ body {
   padding: 5px;
   border-radius: 5px;
 }
-.article-meta, footer { text-align: center; }
-.menu { 
-  text-align: center;
-  padding:0px;
-}
+.menu, .article-meta, footer { text-align: center; }
 .title { font-size: 1.1em; }
 footer a { text-decoration: none; }
 hr {
