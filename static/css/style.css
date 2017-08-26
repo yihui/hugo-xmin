@@ -6,6 +6,7 @@ body {
 }
 
 /* header and footer areas */
+.menu { padding: 0; }
 .menu li { display: inline-block; }
 .article-meta, .menu a {
   text-decoration: none;
