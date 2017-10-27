@@ -9,12 +9,14 @@
 <ul>
   {{ $pages := .Pages }}
   {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
-  {{ range (where $pages "Section" "!=" "") }}
+  {{ $paginator := .Paginate (where $pages "Section" "!=" "") }}
+  {{ range $paginator.Pages }}
   <li>
     <span class="date">{{ .Date.Format "2006/01/02" }}</span>
     <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
   </li>
   {{ end }}
 </ul>
+{{ template "_internal/pagination.html" . }}
 
 {{ partial "footer.html" . }}
