@@ -1,0 +1,19 @@
+<script src="/js/simpletoc.js"></script>
+<script>
+	var firstLvl = 2; // h2 start
+	var lastLvl = 4;  // h4 end
+	var divID = "TOC";
+	var divToSearch = "post-content";
+	window.onload=function(){
+		//params
+		// param1：firstlevel，default: h2
+		// param2：lastLevel，defualt: h3
+		// param3：divID, the div to place the toc，default: TOC
+		// param4：the wrapper div containing headlines to search
+		toc(firstLvl, lastLvl, divID, divToSearch);
+		diyStyle(divID);
+		addNewStyle('@media (max-width: 48em) {#'+divID+'{display: none;} }');
+		addNewStyle('.TOCSectNum {margin-right: 0.5em;}');
+	}
+</script>
+<div id="TOC"></div>
