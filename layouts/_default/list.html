@@ -20,7 +20,7 @@
     <td><a href="{{ .URL }}">{{ .Title }}</a></td>
     <td>
       {{ if fileExists (printf "content/post/%s.json" .File) }}
-        <a href="{{ printf "post/%s.json" .File }}">{{ printf "%s.json" .File }}</a>
+        <a href="{{ printf "/post/%s.json" .File }}">{{ printf "%s.json" .File }}</a>
       {{ else }}
         暂无
       {{ end }}
