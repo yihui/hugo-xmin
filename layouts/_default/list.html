@@ -8,11 +8,11 @@
 
 <table class="sortable">
   <tr>
-    <td>ID</td>
-    <td>名称</td>
-    <td>序列</td>
-    <td>创建日期</td>
-    <td>最后修改日期</td>
+    <th>ID</th>
+    <th>名称</th>
+    <th>序列</th>
+    <th>创建日期</th>
+    <th>最后修改日期</th>
   </tr>
   {{ range (where .Data.Pages "Section" "!=" "") }}
   <tr>
