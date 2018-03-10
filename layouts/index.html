@@ -1,0 +1,23 @@
+{{ partial "header.html" . }}
+
+<section>
+    {{ .Content }}
+</section>
+
+<section>
+    <table class="sortable">
+        <caption>题目列表</caption>
+        <tr>
+            <th>题目名称</th>
+            <th>版本数目</th>
+        </tr>
+        {{ range $key, $value := .Site.Taxonomies.tasknames }}
+        <tr>
+            <td><a href="{{ (print "/tasknames/" $key | urlize) | relURL }}">{{ $key }}</a></td>
+            <td>{{ len $value }}</td>
+        </tr>
+        {{ end }}
+    </table>
+</section>
+
+{{ partial "footer.html" . }}
