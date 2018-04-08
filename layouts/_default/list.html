@@ -22,6 +22,8 @@
         <a href="{{ printf "/seq/%s.json" .File }}">{{ printf "%s.json" .File }}</a>
       {{ else if fileExists (printf "static/seq/%s.csv" .File) }}
         <a href="{{ printf "/seq/%s.csv" .File }}">{{ printf "%s.csv" .File }}</a>
+      {{ else if fileExists (printf "static/seq/%s" .File) }}
+        <a href="{{ printf "/seq/%s/" .File }}">{{ printf "%s" .File }}</a>
       {{ else }}
         暂无
       {{ end }}
