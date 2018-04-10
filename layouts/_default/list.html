@@ -10,7 +10,7 @@
   <tr>
     <th>ID</th>
     <th>名称</th>
-    <th>序列或题库</th>
+    <th>序列</th>
     <th>创建日期</th>
   </tr>
   {{ range (where .Data.Pages "Section" "!=" "") }}
@@ -19,11 +19,11 @@
     <td><a href="{{ .URL }}">{{ .Title }}</a></td>
     <td>
       {{ if fileExists (printf "static/seq/%s.json" .File) }}
-        <a href="{{ printf "/seq/%s.json" .File }}">{{ printf "%s.json" .File }}</a>
+        <a href="{{ printf "/seq/%s.json" .File }}"  target="_blank">{{ printf "%s.json" .File }}</a>
       {{ else if fileExists (printf "static/seq/%s.csv" .File) }}
-        <a href="{{ printf "/seq/%s.csv" .File }}">{{ printf "%s.csv" .File }}</a>
+        <a href="{{ printf "/seq/%s.csv" .File }}"  target="_blank">{{ printf "%s.csv" .File }}</a>
       {{ else if fileExists (printf "static/seq/%s" .File) }}
-        <a href="{{ printf "/seq/%s/" .File }}">{{ printf "%s" .File }}</a>
+        <a href="{{ printf "/seq/%s/sequence.json" .File }}"  target="_blank">{{ printf "%s.json" .File }}</a>
       {{ else }}
         暂无
       {{ end }}

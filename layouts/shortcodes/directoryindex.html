@@ -1,0 +1,13 @@
+{{- $pathURL := .Get "pathURL" -}}
+{{- $path := .Get "path" -}}
+{{- $files := readDir $path -}}
+<table>
+    <th>文件大小（字节）</th>
+    <th>文件名称</th>
+{{- range $files }}
+    <tr>
+        <td>{{ .Size }}</td>
+        <td><a href="{{ $pathURL }}{{ .Name | relURL }}" target="_blank"> {{ .Name }}</a></td>
+    </tr>
+{{- end }}
+</table>
