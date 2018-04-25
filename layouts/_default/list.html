@@ -6,13 +6,33 @@
 
 {{ .Content }}
 
-<ul>
+<table class="sortable">
+  <tr>
+    <th>ID</th>
+    <th>名称</th>
+    <th>序列</th>
+    <th>创建日期</th>
+    <th>最后修改日期</th>
+  </tr>
   {{ range (where .Data.Pages "Section" "!=" "") }}
-  <li>
-    <span class="date">{{ .Date.Format "2006/01/02" }}</span>
-    <a href="{{ .URL }}">{{ .Title }}</a>
-  </li>
+  <tr>
+    <td>{{ .Params.code }}</td>
+    <td><a href="{{ .URL }}">{{ .Title }}</a></td>
+    <td>
+      {{ if fileExists (printf "static/seq/%s.json" .File) }}
+        <a href="{{ printf "/seq/%s.json" .File }}"  target="_blank">{{ printf "%s.json" .File }}</a>
+      {{ else if fileExists (printf "static/seq/%s.csv" .File) }}
+        <a href="{{ printf "/seq/%s.csv" .File }}"  target="_blank">{{ printf "%s.csv" .File }}</a>
+      {{ else if fileExists (printf "static/seq/%s" .File) }}
+        <a href="{{ printf "/seq/%s/sequence.json" .File }}"  target="_blank">{{ printf "%s.json" .File }}</a>
+      {{ else }}
+        暂无
+      {{ end }}
+    </td>
+    <td>{{ .Date.Format "2006/01/02" }}</td>
+    <td>{{ .Lastmod.Format "2006/01/02" }}</td>
+  </tr>
   {{ end }}
-</ul>
+</table>
 
 {{ partial "footer.html" . }}
