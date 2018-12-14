@@ -48,4 +48,4 @@ table {
 }
 table thead th { border-bottom: 1px solid #ddd; }
 th, td { padding: 5px; }
-thead, tfoot, tr:nth-child(even) { background: #eee }
+thead, tfoot, tr:nth-child(even) { background: #eee; }
