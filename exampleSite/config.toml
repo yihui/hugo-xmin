@@ -34,3 +34,4 @@ footnotereturnlinkcontents = "↩"
 [params]
     description = "A website built through Hugo and blogdown."
     footer = "&copy; [Yihui Xie](https://yihui.name) 2017 -- 2019 | [Github](https://github.com/yihui) | [Twitter](https://twitter.com/xieyihui)"
+    enable_comments = true
