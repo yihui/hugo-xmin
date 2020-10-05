@@ -9,7 +9,7 @@ The theme name "XMin" can be interpreted as "**X**ie's **Min**imal theme" (Xie i
 
 # config.toml
 
-For this example site, I defined permalinks for two sections, `post` and `note`, so that the links to pages under these directories will contain the date info, e.g., `https://xmin.yihui.name/post/2016/02/14/a-plain-markdown-post/`. This is optional, and it is up to your personal taste of URLs.
+For this example site, I defined permalinks for two sections, `post` and `note`, so that the links to pages under these directories will contain the date info, e.g., `https://xmin.yihui.org/post/2016/02/14/a-plain-markdown-post/`. This is optional, and it is up to your personal taste of URLs.
 
 ```
 [permalinks]
@@ -47,7 +47,7 @@ The page footer can be defined in `.Params.footer`, and the text is treated as M
 
 ```
 [params]
-    footer = "&copy; [Yihui Xie](https://yihui.name) 2017"
+    footer = "&copy; [Yihui Xie](https://yihui.org) 2017"
 ```
 
 # Custom layouts
@@ -55,11 +55,11 @@ The page footer can be defined in `.Params.footer`, and the text is treated as M
 There are two layout files under `layouts/partials/` that you may want to override: `head_custom.html` and `foot_custom.html`. This is how you inject arbitrary HTML code to the head and foot areas. For example, this site has a file `layouts/partials/foot_custom.html` to support LaTeX math via MathJax and center images automatically:
 
 ```html
-<script src="//yihui.name/js/math-code.js"></script>
+<script src="//yihui.org/js/math-code.js"></script>
 <script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
-<script async src="//yihui.name/js/center-img.js"></script>
+<script async src="//yihui.org/js/center-img.js"></script>
 ```
 
 You can certainly enable highlight.js for syntax highlighting by yourself through `head_custom.html` and `foot_custom.html` if you want.
