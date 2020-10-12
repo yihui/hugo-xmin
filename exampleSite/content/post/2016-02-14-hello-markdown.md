@@ -87,6 +87,6 @@ A table (centered by default):
 
 An image (automatically centered when it is appropriate):
 
-![Happy Elmo](https://slides.yihui.name/gif/happy-elmo.gif)
+![Happy Elmo](https://slides.yihui.org/gif/happy-elmo.gif)
 
 Looks good?

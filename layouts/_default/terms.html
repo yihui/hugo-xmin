@@ -3,12 +3,9 @@
 <h1>{{ .Title }}</h1>
 
 <ul class="terms">
-  {{ range $key, $value := .Data.Terms }}
+  {{ range .Data.Terms }}
   <li>
-    <a href="{{ (print "/" $.Data.Plural "/" $key | urlize) | relURL }}">
-      {{ $key }}
-    </a>
-    ({{ len $value }})
+    <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a> ({{ .Count }})
   </li>
   {{ end }}
 </ul>
