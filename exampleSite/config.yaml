@@ -14,19 +14,19 @@ permalinks:
 menu:
   main:
     - name: Home
-      url: /
+      url: ""
       weight: 1
     - name: About
-      url: /about/
+      url: "about/"
       weight: 2
     - name: Categories
-      url: /categories/
+      url: "categories/"
       weight: 3
     - name: Tags
-      url: /tags/
+      url: "tags/"
       weight: 4
     - name: Subscribe
-      url: /index.xml
+      url: "index.xml"
 
 params:
   description: "A website built through Hugo and blogdown."
