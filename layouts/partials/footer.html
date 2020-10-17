@@ -4,6 +4,22 @@
   <hr/>
   {{ . | markdownify }}
   {{ end }}
+  {{ if .File.Path }}
+    {{ $.Scratch.Set "FilePath" .File.Path }}
+    {{ $RmdFile := (print .File.BaseFileName ".Rmd") }}
+    {{ $Files := readDir (print "content/" .File.Dir) }}
+    {{ if (where $Files "Name" $RmdFile) }}
+      {{ $.Scratch.Set "FilePath" (print .File.Dir $RmdFile) }}
+    {{ else }}
+      {{ $RmdFile := (print .File.BaseFileName ".Rmarkdown") }}
+      {{ if (where $Files "Name" $RmdFile) }}
+        {{ $.Scratch.Set "FilePath" (print .File.Dir $RmdFile) }}
+      {{ end }}
+    {{ end }}
+    {{ with .Site.Params.GithubEdit}}
+    | <a href="{{ . }}{{ $.Scratch.Get "FilePath" }}">Edit this page</a>
+    {{ end }}
+  {{ end }}
   </footer>
   </body>
 </html>

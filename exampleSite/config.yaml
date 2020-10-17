@@ -30,6 +30,7 @@ menu:
 
 params:
   description: "A website built through Hugo and blogdown."
+  GithubEdit: "https://github.com/yihui/hugo-xmin/edit/feature/github-edit/exampleSite/content/"
   footer: "&copy; [Yihui Xie](https://yihui.org) 2017 -- 2020 | [Github](https://github.com/yihui) | [Twitter](https://twitter.com/xieyihui)"
 
 markup:
