@@ -22,6 +22,11 @@ hr {
   color: #ddd;
 }
 
+/* pagination */
+.pagination { text-align: center; }
+.pagination li { display: inline; }
+.pagination a { padding: 0 .2em; }
+
 /* code */
 pre {
   border: 1px solid #ddd;
