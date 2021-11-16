@@ -33,6 +33,8 @@ params:
   footer: "&copy; [Yihui Xie](https://yihui.org) 2017 -- 2021 | [Github](https://github.com/yihui) | [Twitter](https://twitter.com/xieyihui)"
 
 markup:
+  highlight:
+    codeFences: false
   goldmark:
     renderer:
       unsafe: true
