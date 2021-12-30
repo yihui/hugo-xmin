@@ -4,7 +4,8 @@ title: "A minimal Hugo website"
 theme: "hugo-xmin"
 googleAnalytics: ""
 disqusShortname: ""
-ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
+ignoreFiles:
+  ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
 footnotereturnlinkcontents: "↩"
 
 permalinks:
@@ -30,7 +31,7 @@ menu:
 
 params:
   description: "A website built through Hugo and blogdown."
-  footer: "&copy; [Yihui Xie](https://yihui.org) 2017 -- 2021 | [Github](https://github.com/yihui) | [Twitter](https://twitter.com/xieyihui)"
+  footer: "&copy; [Yihui Xie](https://yihui.org) 2017 -- {year} | [Github](https://github.com/yihui) | [Twitter](https://twitter.com/xieyihui)"
 
 markup:
   highlight:
