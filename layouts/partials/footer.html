@@ -2,7 +2,7 @@
   {{ partial "foot_custom.html" . }}
   {{ with .Site.Params.footer }}
   <hr/>
-  {{ . | markdownify }}
+  {{ replace . "{Year}" now.Year | markdownify}}
   {{ end }}
   </footer>
   </body>
