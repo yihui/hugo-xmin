@@ -44,8 +44,10 @@ The page footer can be defined in `.Params.footer`, and the text is treated as M
 
 ```
 params:
-  footer: "&copy; [Yihui Xie](https://yihui.org) 2017 -- 2021"
+  footer: "&copy; [Yihui Xie](https://yihui.org) 2017 -- {Year}"
 ```
+
+Here `{Year}` means the year in which the site is built (usually the current year).
 
 # Custom layouts
 
