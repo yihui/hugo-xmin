@@ -53,7 +53,7 @@ There are two layout files under `layouts/partials/` that you may want to overri
 
 ```html
 <script defer src="//yihui.org/js/math-code.js"></script>
-<script defer src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+<script defer src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
 <script defer src="//yihui.org/js/center-img.js"></script>
