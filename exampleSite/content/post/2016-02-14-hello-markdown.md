@@ -41,6 +41,9 @@ extension inside your config file (e.g., `hugo.yaml`). Afterwards you can use
 standard \(\TeX\) syntax (inline: `\( ... \)`; display style: `$$ ... $$`) to
 display formulae, e.g., \(S_n = \sum_{i=1}^n X_i\). For details, please refer to
 the official [Hugo docs](https://gohugo.io/content-management/mathematics/).
+Alternatively, you may see
+[this post](https://yihui.org/en/2018/07/latex-math-markdown/) for a general
+solution, which works with any Hugo version and requires no configuration.
 
 When creating a new post, you have to decide whether the post format is Markdown
 or R Markdown, and this can be done via the `rmd` argument of the function
