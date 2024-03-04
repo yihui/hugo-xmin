@@ -26,27 +26,21 @@ This is a post written in plain Markdown (`*.md`) instead of R Markdown
     Markdown document, you can embed R code chunks (```` ```{r} ````);
 2.  A plain Markdown post is rendered through
     [Goldmark](https://gohugo.io/overview/configuration/) by default, and an R
-    Markdown document is compiled by [**rmarkdown**](http://rmarkdown.rstudio.com)
-    and [Pandoc](http://pandoc.org).
+    Markdown document is compiled by
+    [**rmarkdown**](http://rmarkdown.rstudio.com) and
+    [Pandoc](http://pandoc.org).
 
-There are many differences in syntax between Goldmark's Markdown and Pandoc's
-Markdown. For example, you can write a task list with Goldmark but not with
-Pandoc:
+There are differences in syntax between Goldmark's Markdown and Pandoc's
+Markdown. For example, Goldmark does not support LaTeX math and Pandoc does. I
+have added the KaTeX support to this theme (i.e.,
+[hugo-xmin](https://github.com/yihui/hugo-xmin))
 
--   [x] Write an R package.
--   [ ] Write a book.
--   [ ] ...
--   [ ] Profit!
-
-Similarly, Goldmark does not support LaTeX math and Pandoc does. I have added
-the KaTeX support to this theme ([hugo-xmin](https://github.com/yihui/hugo-xmin))
-
-As of hugo v0.122, you can enable typesetting \(\LaTeX\) math in Markdown using
+As of Hugo v0.122.0, you can enable typesetting \(\LaTeX\) math in Markdown using
 the standard syntax. To do so, you have make use of the goldmark `passthrough`
-extension inside your `hugo.toml`/`hugo.yaml`/`hugo.json`. Afterwards you can 
-use standard \(\TeX\) syntax (inline: `\( … \)`; display style: `$$ … $$`) to display
-formulae, e.g. \(S_n = \sum_{i=1}^n X_i\). For details, please refer to the
-official [hugo docs](https://gohugo.io/content-management/mathematics/).
+extension inside your config file (e.g., `hugo.yaml`). Afterwards you can use
+standard \(\TeX\) syntax (inline: `\( ... \)`; display style: `$$ ... $$`) to
+display formulae, e.g., \(S_n = \sum_{i=1}^n X_i\). For details, please refer to
+the official [Hugo docs](https://gohugo.io/content-management/mathematics/).
 
 When creating a new post, you have to decide whether the post format is Markdown
 or R Markdown, and this can be done via the `rmd` argument of the function
