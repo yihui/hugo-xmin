@@ -3,9 +3,9 @@
 <h1>{{ .Title }}</h1>
 
 <ul class="terms">
-  {{ range .Data.Terms }}
+  {{ range .Pages }}
   <li>
-    <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a> ({{ .Count }})
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a> ({{ len .Pages }})
   </li>
   {{ end }}
 </ul>
