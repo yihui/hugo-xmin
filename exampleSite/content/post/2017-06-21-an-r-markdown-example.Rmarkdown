@@ -1,0 +1,19 @@
+---
+title: An R Markdown Example
+author: Yihui Xie
+date: '2017-06-21'
+categories:
+  - Example
+  - R
+tags:
+  - blogdown
+slug: an-r-markdown-example
+---
+
+This is a simple R Markdown example, with a single R code chunk below.
+
+```{r}
+knitr::kable(head(mtcars))
+```
+
+The table shows the first 6 rows of the `mtcars` dataset in base R.
