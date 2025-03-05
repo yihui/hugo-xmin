@@ -1,7 +1,103 @@
-body {
-  font-family: Optima, Candara, Calibri, Arial, sans-serif;
+@font-face{
+    font-family: 'Fira Code';
+    src: url('../fonts/firacode/eot/FiraCode-Light.eot');
+    src: url('../fonts/firacode/eot/FiraCode-Light.eot') format('embedded-opentype'),
+         url('../fonts/firacode/woff2/FiraCode-Light.woff2') format('woff2'),
+         url('../fonts/firacode/woff/FiraCode-Light.woff') format('woff'),
+         url('../fonts/firacode/ttf/FiraCode-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
 }
+
+@font-face{
+    font-family: 'Fira Code';
+    src: url('../fonts/firacode/eot/FiraCode-Regular.eot');
+    src: url('../fonts/firacode/eot/FiraCode-Regular.eot') format('embedded-opentype'),
+         url('../fonts/firacode/woff2/FiraCode-Regular.woff2') format('woff2'),
+         url('../fonts/firacode/woff/FiraCode-Regular.woff') format('woff'),
+         url('../fonts/firacode/ttf/FiraCode-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Fira Code';
+    src: url('../fonts/firacode/eot/FiraCode-Medium.eot');
+    src: url('../fonts/firacode/eot/FiraCode-Medium.eot') format('embedded-opentype'),
+         url('../fonts/firacode/woff2/FiraCode-Medium.woff2') format('woff2'),
+         url('../fonts/firacode/woff/FiraCode-Medium.woff') format('woff'),
+         url('../fonts/firacode/ttf/FiraCode-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Fira Code';
+    src: url('../fonts/firacode/eot/FiraCode-Bold.eot');
+    src: url('../fonts/firacode/eot/FiraCode-Bold.eot') format('embedded-opentype'),
+         url('../fonts/firacode/woff2/FiraCode-Bold.woff2') format('woff2'),
+         url('../fonts/firacode/woff/FiraCode-Bold.woff') format('woff'),
+         url('../fonts/firacode/ttf/FiraCode-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+  
+@font-face {
+  font-family: roboto;
+  src: url("../fonts/Roboto-Light.ttf") format("truetype");
+  font-weight: 300; 
+}
+  
+@font-face {
+  font-family: roboto;
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal; 
+}
+  
+@font-face {
+  font-family: roboto;
+  src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700; 
+}
+
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Crimson Text Regular'),
+       local('CrimsonText-Regular'),
+       url(../fonts/CrimsonText-Regular.woff2) format('woff2'),
+       url(../fonts/CrimsonText-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Crimson Text Italic'),
+       local('CrimsonText-Italic'),
+       url(../fonts/CrimsonText-Italic.woff2) format('woff2'),
+       url(../fonts/CrimsonText-Italic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Crimson Text Bold'),
+       local('CrimsonText-Bold'),
+       url(../fonts/CrimsonText-Bold.woff2) format('woff2'),
+       url(../fonts/CrimsonText-Bold.ttf) format('truetype');
+}
+
+body {
+  font-family: Roboto, Calibri, Arial, 'PingFang SC', 'Microsoft Yahei', 'STHeiTi', 'SimHei', sans-serif;
+}
+
 code {
-  font-family: "Lucida Console", Monaco, monospace;
-  font-size: 85%;
+  font-family: "Menlo", "Fira Code", "Lucida Console", Monaco, monospace;
+  font-size: 75%;
+  font-weight: 300;
+  font-feature-settings: "calt" 1;  /* Enable ligatures for IE 10+, Edge */
+  text-rendering: optimizeLegibility; /* Force ligatures for Webkit, Blink, Gecko */  
 }
