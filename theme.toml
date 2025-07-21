@@ -6,7 +6,7 @@ homepage = "https://xmin.yihui.org"
 demosite = "https://xmin.yihui.org"
 tags = ["minimal", "blog", "personal", "clean", "simple", "starter", "minimalist"]
 features = ["blog"]
-min_version = "0.18"
+min_version = "0.146.0"
 
 [author]
   name = "Yihui Xie"
