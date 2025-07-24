@@ -51,7 +51,7 @@ Here `{Year}` means the year in which the site is built (usually the current yea
 
 ## Custom layouts
 
-There are two layout files under `layouts/partials/` that you may want to override: `head_custom.html` and `foot_custom.html`. This is how you inject arbitrary HTML code to the head and foot areas. For example, this site has a file `layouts/partials/foot_custom.html` to support LaTeX math via KaTeX and center images automatically:
+There are two layout files under `layouts/_partials/` that you may want to override: `head_custom.html` and `foot_custom.html`. This is how you inject arbitrary HTML code to the head and foot areas. For example, this site has a file `layouts/_partials/foot_custom.html` to support LaTeX math via KaTeX and center images automatically:
 
 ```html
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
