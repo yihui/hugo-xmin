@@ -5,19 +5,19 @@
 **XMin** is a Hugo theme written by [Yihui Xie](https://yihui.org) in about four hours: half an hour was spent on the Hugo templates, and 3.5 hours were spent on styling. The main motivation for writing this theme was to provide a really minimal example to beginners of Hugo templates. This XMin theme contains about 140 lines of code in total, including the code in HTML templates and CSS (also counting empty lines).
 
 
-```bash
+``` bash
 find . -not -path '*/exampleSite/*' \( -name '*.html' -o -name '*.css' \) | xargs wc -l
 ```
 
 ```
+      12 ./layouts/single.html
+      20 ./layouts/list.html
+      13 ./layouts/terms.html
        5 ./layouts/404.html
-      12 ./layouts/_default/single.html
-      20 ./layouts/_default/list.html
-      13 ./layouts/_default/terms.html
-       0 ./layouts/partials/foot_custom.html
-       0 ./layouts/partials/head_custom.html
-       9 ./layouts/partials/footer.html
-      20 ./layouts/partials/header.html
+       0 ./layouts/_partials/foot_custom.html
+       0 ./layouts/_partials/head_custom.html
+       9 ./layouts/_partials/footer.html
+      20 ./layouts/_partials/header.html
       51 ./static/css/style.css
        7 ./static/css/fonts.css
      137 total
