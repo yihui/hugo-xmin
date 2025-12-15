@@ -4,19 +4,19 @@
   <hr/>
   {{ replace . "{Year}" now.Year | markdownify }}
   {{ end }}
-  {{ if .File.Path }}
-    {{ $.Scratch.Set "FilePath" .File.Path }}
-    {{ $RmdFile := (print .File.BaseFileName ".Rmd") }}
-    {{ $Files := readDir (print "content/" .File.Dir) }}
+  {{ with .File }}
+    {{ $.Scratch.Set "FilePath" .Path }}
+    {{ $RmdFile := (print .BaseFileName ".Rmd") }}
+    {{ $Files := readDir (print "content/" .Dir) }}
     {{ if (where $Files "Name" $RmdFile) }}
-      {{ $.Scratch.Set "FilePath" (print .File.Dir $RmdFile) }}
+      {{ $.Scratch.Set "FilePath" (print .Dir $RmdFile) }}
     {{ else }}
-      {{ $RmdFile := (print .File.BaseFileName ".Rmarkdown") }}
+      {{ $RmdFile := (print .BaseFileName ".Rmarkdown") }}
       {{ if (where $Files "Name" $RmdFile) }}
-        {{ $.Scratch.Set "FilePath" (print .File.Dir $RmdFile) }}
+        {{ $.Scratch.Set "FilePath" (print .Dir $RmdFile) }}
       {{ end }}
     {{ end }}
-    {{ with .Site.Params.GithubEdit}}
+    {{ with $.Site.Params.GithubEdit}}
     | <a href="{{ . }}{{ $.Scratch.Get "FilePath" }}">Edit this page</a>
     {{ end }}
   {{ end }}
