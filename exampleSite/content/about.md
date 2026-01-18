@@ -49,6 +49,8 @@ params:
 
 Here `{Year}` means the year in which the site is built (usually the current year).
 
+The format for displaying dates can be defined in `.Params.dateFormat`. The value of this configuration should be based on [Go's reference time](https://gohugo.io/functions/time/format/#layout-string). For instance, to display the date as `YYYY-MM-DD` the value of this site paramter should be `2006-01-02`.
+
 ## Custom layouts
 
 There are two layout files under `layouts/_partials/` that you may want to override: `head_custom.html` and `foot_custom.html`. This is how you inject arbitrary HTML code to the head and foot areas. For example, this site has a file `layouts/_partials/foot_custom.html` to support LaTeX math via KaTeX and center images automatically:
