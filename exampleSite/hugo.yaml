@@ -6,6 +6,8 @@ googleAnalytics: ""
 disqusShortname: ""
 ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
 footnotereturnlinkcontents: "↩"
+pagination:
+  pagerSize: 1
 
 permalinks:
   note: "/note/:year/:month/:day/:slug/"
